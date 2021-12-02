@@ -1,0 +1,21 @@
+bonus:
+  - Anemo DMG Bonus
+  - Cryo DMG Bonus
+  - Electro DMG Bonus
+  - Geo DMG Bonus
+  - Hydro DMG Bonus
+  - Pyro DMG Bonus
+
+main:
+  - ATK
+  - CRIT DMG
+  - CRIT Rate
+  - DEF
+  - Elemental Mastery
+  - Energy Recharge
+  - HP
+
+sub:
+  - ATK flat
+  - DEF flat
+  - HP flat

@@ -1,0 +1,172 @@
+Aether:
+  star: 4
+  vision: Anemo
+  weapon: Sword
+Albedo:
+  star: 5
+  vision: Geo
+  weapon: Sword
+Aloy:
+  star: 5
+  vision: Cryo
+  weapon: Bow
+Amber:
+  star: 4
+  vision: Pyro
+  weapon: Bow
+Barbara:
+  star: 5
+  vision: Hydro
+  weapon: Catalyst
+Beidou:
+  star: 4
+  vision: Electro
+  weapon: Claymore
+Bennett:
+  star: 4
+  vision: Pyro
+  weapon: Sword
+Chongyun:
+  star: 4
+  vision: Cryo
+  weapon: Claymore
+Diluc:
+  star: 5
+  vision: Pyro
+  weapon: Claymore
+Diona:
+  star: 4
+  vision: Cryo
+  weapon: Bow
+Eula:
+  star: 5
+  vision: Cryo
+  weapon: Claymore
+Fischl:
+  star: 4
+  vision: Electro
+  weapon: Bow
+Ganyu:
+  star: 5
+  vision: Cryo
+  weapon: Bow
+Hu Tao:
+  star: 5
+  vision: Pyro
+  weapon: Polearm
+Jean:
+  star: 5
+  vision: Anemo
+  weapon: Sword
+Kaedehara Kazuha:
+  star: 5
+  vision: Anemo
+  weapon: Sword
+Kaeya:
+  star: 4
+  vision: Cryo
+  weapon: Sword
+Kamisato Ayaka:
+  star: 5
+  vision: Cryo
+  weapon: Sword
+Keqing:
+  star: 5
+  vision: Electro
+  weapon: Sword
+Klee:
+  star: 5
+  vision: Pyro
+  weapon: Catalyst
+Kujou Sara:
+  star: 4
+  vision: Electro
+  weapon: Bow
+Lisa:
+  star: 4
+  vision: Electro
+  weapon: Catalyst
+Lumine:
+  star: 4
+  vision: Anemo
+  weapon: Sword
+Mona:
+  star: 5
+  vision: Hydro
+  weapon: Catalyst
+Ningguang:
+  star: 4
+  vision: Geo
+  weapon: Catalyst
+Noelle:
+  star: 4
+  vision: Geo
+  weapon: Claymore
+Qiqi:
+  star: 5
+  vision: Cryo
+  weapon: Sword
+Raiden Shogun:
+  star: 5
+  vision: Electro
+  weapon: Polearm
+Rezor:
+  star: 4
+  vision: Electro
+  weapon: Claymore
+Rosaria:
+  star: 4
+  vision: Cryo
+  weapon: Polearm
+Sangonomiya Kokomi:
+  star: 5
+  vision: Hydro
+  weapon: Catalyst
+Sayu:
+  star: 4
+  vision: Anemo
+  weapon: Claymore
+Sucrose:
+  star: 4
+  vision: Anemo
+  weapon: Catalyst
+Tartaglia:
+  star: 5
+  vision: Hydro
+  weapon: Bow
+Thoma:
+  star: 4
+  vision: Pyro
+  weapon: Polearm
+Venti:
+  star: 5
+  vision: Anemo
+  weapon: Bow
+Xiangling:
+  star: 4
+  vision: Pyro
+  weapon: Polearm
+Xiao:
+  star: 5
+  vision: Anemo
+  weapon: Polearm
+Xingqiu:
+  star: 4
+  vision: Hydro
+  weapon: Sword
+Xinyan:
+  star: 4
+  vision: Pyro
+  weapon: Claymore
+Yanfei:
+  star: 4
+  vision: Pyro
+  weapon: Catalyst
+Yoimiya:
+  star: 5
+  vision: Pyro
+  weapon: Bow
+Zhongli:
+  star: 5
+  vision: Geo
+  weapon: Polearm
