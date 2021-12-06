@@ -1,3 +1,14 @@
+Ganyu:
+  stats:
+    ATK flat: 5
+    ATK: 10
+    CRIT DMG: 20
+    CRIT Rate: 20
+    Cryo DMG Bonus: 10
+  weight: 10
+
 Zhongli:
-  HP: 20
-  HP flat: 1
+  stats:
+    HP: 20
+    HP flat: 1
+  weight: 5

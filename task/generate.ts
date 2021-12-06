@@ -16,7 +16,7 @@ import pickRandom from '../source/function/pickRandom'
 
 const main = async (): Promise<void> => {
 
-  const listArtifact = new Array(20).fill(0)
+  const listArtifact = new Array(50).fill(0)
     .map((): Artifact => ({
       level: 20,
       slot: pickRandom(listTypeSlot),

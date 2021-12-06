@@ -20,14 +20,10 @@ type Artifact = Arti & {
 type Db = Record<Slot, Artifact[]>
 
 type Member = {
+  artifact: Record<Slot, Artifact>
   name: TypeCharacter
-  listArtifact: Artifact[]
-  listWeight: Weight[]
-}
-
-type Weight = {
-  key: Stats
-  value: number
+  stats: Record<Stats, number>
+  weight: number
 }
 
 // variable
@@ -40,43 +36,35 @@ const calcTotal = (
   member: Member,
 ) => {
   let total = 0
-  member.listWeight.forEach(weight => {
-    member.listArtifact.forEach(artifact => {
-      total += artifact.stats[weight.key] * weight.value
+  Object.keys(member.stats).forEach(key => {
+    listTypeSlot.forEach(slot => {
+      total += (member.artifact[slot]?.stats[key] || 0) * member.stats[key]
     })
   })
-  return total
+  return total * member.weight
 }
 
 const equip = (
   member: Member,
   slot?: Slot,
-): void => {
-  const listSlot = slot ? [slot] : listTypeSlot
-  listSlot.forEach(s => {
+): void => (slot ? [slot] : listTypeSlot).forEach(s => {
 
-    const i = listTypeSlot.indexOf(s)
+  const artifact = pickRandom(db[s].filter(it => !it.owner))
+  if (!artifact) return
 
-    const artifact = pickRandom(db[i].filter(it => !it.owner))
-    if (!artifact) return
-
-    artifact.owner = member.name
-    member.listArtifact[i] = artifact
-  })
-}
+  artifact.owner = member.name
+  member.artifact[s] = artifact
+})
 
 const main = () => {
 
   makeDb()
-  console.log(db)
 
   const listMember: Member[] = Object.keys(plan).map(name => ({
-    listArtifact: [],
-    listWeight: Object.keys(plan[name]).map(it => ({
-      key: it,
-      value: plan[name][it],
-    })),
+    artifact: {},
     name,
+    weight: plan[name].weight,
+    stats: plan[name].stats,
   }))
 
   listMember.forEach(member => {
@@ -87,7 +75,6 @@ const main = () => {
     const total = calcTotal(member)
     console.log(`${member.name} total: ${total}`)
   })
-
 }
 
 const makeDb = () => {
@@ -104,7 +91,6 @@ const makeDb = () => {
 
 const makeId = (): string => Math.random().toString(36)
   .slice(-8)
-
 
 // export
 export default main
